@@ -2,12 +2,21 @@
 
 
 <h3>Config Vars</h3>
-JUNK:
-<%= ENV['JUNK'] %>
-<br />
-RACK_ENV:
-<%= ENV['RACK_ENV'] %>
-<br />
+<table>
+  <tr>
+    <th>JUNK</th>
+    <td><%= ENV['JUNK'] %></td>
+  </tr>
+  <tr>
+    <th>RACK_ENV</th>
+    <td><%= ENV['RACK_ENV'] %></td>
+  </tr>
+  <tr>
+    <th>DATABASE_URL</th>
+    <td><%= ENV['DATABASE_URL'] %></td>
+  </tr>
+</table>
+
 <br />
 <hr />
 
