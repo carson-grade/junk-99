@@ -1,6 +1,7 @@
 {
   "name": "junk-99",
   "scripts": {
+    "postdeploy": "bundle exec rake db:seed"
   },
   "env": {
     "LANG": {
