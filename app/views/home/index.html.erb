@@ -28,6 +28,7 @@
 
 
 <br />
+<hr />
 
 <h3>Dir: /public/assets</h3>
 <ul>
@@ -35,5 +36,11 @@
   <li><%= file[/\/.*/] %></li>
   <%- end %>
 </ul>
-
+<hr />
+<p>
+GIT:	<%= `git show --pretty=%H`.truncate(20) %>
+</p>
+<hr />
+<p>
 <%= link_to "Users", users_path %>
+</p>
