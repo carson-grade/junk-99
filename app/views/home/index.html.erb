@@ -1,0 +1,26 @@
+<h3>Config Vars</h3>
+<table>
+  <tr>
+    <th>JUNK</th>
+    <td><%= ENV['JUNK'] %></td>
+  </tr>
+  <tr>
+    <th>RACK_ENV</th>
+    <td><%= ENV['RACK_ENV'] %></td>
+  </tr>
+  <tr>
+    <th>DATABASE_URL</th>
+    <td><%= ENV['DATABASE_URL'] %></td>
+  </tr>
+</table>
+
+<br />
+
+<h3>Dir: /public/assets</h3>
+<ul>
+<% Dir["public/assets/*.*"].each do |file| %>
+  <li><%= file[/\/.*/] %></li>
+  <%- end %>
+</ul>
+
+<%= link_to "Users", users_path %>
