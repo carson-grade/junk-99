@@ -21,7 +21,7 @@
 
 <h3>Dir: /public/assets</h3>
 <ul>
-<% Dir["public/assets/*.*"].each do |file| %>
+<% Dir["public/assets/*.*"].sort.each do |file| %>
   <li><%= file[/\/.*/] %></li>
   <%- end %>
 </ul>
