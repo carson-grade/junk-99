@@ -9,10 +9,23 @@
     <td><%= ENV['RACK_ENV'] %></td>
   </tr>
   <tr>
+    <th>HEROKU_APP_NAME</th>
+    <td><%= ENV['HEROKU_APP_NAME'] %></td>
+  </tr>  
+  <tr>
+    <th>HEROKU_SLUG_COMMIT</th>
+    <td><%= ENV['HEROKU_SLUG_COMMIT'] %></td>
+  </tr>
+  <tr>
+    <th>HEROKU_RELEASE_CREATED_AT</th>
+    <td><%= ENV['HEROKU_RELEASE_CREATED_AT'] %></td>
+  </tr>  
+  <tr>
     <th>DATABASE_URL</th>
     <td><%= ENV['DATABASE_URL'] %></td>
   </tr>
 </table>
+
 
 <br />
 
